@@ -8,9 +8,9 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/youkarnawi/simple-app-gitops/tree/main/simple-app-gitops
+    repoURL: https://github.com/youkarnawi/simple-app-gitops
     targetRevision: HEAD
-    path: .
+    path: simple-app-gitop
   project: default
   syncPolicy:
     automated:
