@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: simple-app
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  source:
+    repoURL: https://github.com/youkarnawi/simple-app-gitops/tree/main/simple-app-gitops
+    targetRevision: HEAD
+    path: .
+  project: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
