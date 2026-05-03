@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: simple-java-app
-          image: yalkarnawi19/simple-java-app:100
+          image: yalkarnawi19/simple-java-app:101
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
